@@ -5,6 +5,13 @@ main {
 
 body {
   padding-top: 30px;
+  color: var(--text-color-light);
+  background-color: var(--bg-color-light);
+}
+
+body.dark-mode {
+  color: #fff;
+  background-color: #000;
 }
 
 .full-width {
@@ -85,6 +92,10 @@ li a:hover:not(.active) {
   margin: 0 auto;
 }
 
+.card.dark-mode {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+}
+
 .card p {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -108,6 +119,10 @@ img {
   margin: 10px auto;
   text-align: center; 
   
+}
+
+.card-travel.dark-mode {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
 }
 
 .card-travel img {
@@ -175,6 +190,10 @@ img {
   border-radius: 5px;
 }
 
+.card.likes.dark-mode {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+}
+
 /* Reduced motion */
 .still-image {
   display: none;
@@ -217,6 +236,29 @@ img {
 @media (prefers-reduced-motion: reduce) {
   #skip {
       transition: none;
+  }
+}
+
+/* CSS for tablet view */
+@media (min-width: 768px) {
+  .tablet-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+  }
+
+  .likes-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-column {
+    padding-right: 40px;
+    margin-top: -20px;
+  }
+
+  .card {
+    margin-bottom: 10px;
   }
 }
 
