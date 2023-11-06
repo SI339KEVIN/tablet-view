@@ -12,5 +12,8 @@ function toggleDarkMode() {
         card[i].classList.toggle('dark-mode');
     }
 
+    var darkToggle = document.getElementsByClassName('dark-toggle')[0];
+    darkToggle.classList.toggle('dark-mode');
+
     console.log("Dark mode toggled");
   }

@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="js/script.js"></script>
 </head>
 
@@ -18,12 +19,15 @@
                 <li><a href="index.html">Home/Pets</a></li>
                 <li><a href="travel.html">Home/Travel</a></li>
                 <li><a href="recipes.html" class="active">Home/Recipes</a></li>
-                <li><a onclick="toggleDarkMode()">Dark Mode</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
+        <button id="darkModeToggle" onclick="toggleDarkMode()" class="dark-toggle">
+            <i class="fas fa-moon"></i> Dark Mode
+        </button>
+
         <div>
             <header>
                 <h1>Recipes</h1>
